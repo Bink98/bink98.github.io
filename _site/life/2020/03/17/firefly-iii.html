@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>通过Firefly III构建个人财务管理系统的解决方案 | Bink’s Blog</title>
+<meta name="generator" content="Jekyll v4.0.0" />
+<meta property="og:title" content="通过Firefly III构建个人财务管理系统的解决方案" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="为什么需要财务管理" />
+<meta property="og:description" content="为什么需要财务管理" />
+<link rel="canonical" href="http://localhost:4000/life/2020/03/17/firefly-iii.html" />
+<meta property="og:url" content="http://localhost:4000/life/2020/03/17/firefly-iii.html" />
+<meta property="og:site_name" content="Bink’s Blog" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2020-03-17T20:40:00+08:00" />
+<script type="application/ld+json">
+{"mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/life/2020/03/17/firefly-iii.html"},"@type":"BlogPosting","url":"http://localhost:4000/life/2020/03/17/firefly-iii.html","headline":"通过Firefly III构建个人财务管理系统的解决方案","dateModified":"2020-03-17T20:40:00+08:00","datePublished":"2020-03-17T20:40:00+08:00","description":"为什么需要财务管理","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Bink's Blog" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">Bink&#39;s Blog</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/about/">About</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">通过Firefly III构建个人财务管理系统的解决方案</h1>
+    <p class="post-meta">
+      <time class="dt-published" datetime="2020-03-17T20:40:00+08:00" itemprop="datePublished">Mar 17, 2020
+      </time></p>
+  </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <h2 id="为什么需要财务管理">为什么需要财务管理</h2>
+
+<p>一直以来我都没有财务管理的习惯（没什么钱，又懒得记账），但是拥有一个良好的财务管理的意识和习惯毫无疑问会带来诸多好处：</p>
+
+<ul>
+  <li>记下每一笔账的同时会让你真正意识到自己的开销。</li>
+  <li>绘制季度/年度个人财务表单，能让你清晰地看到自己一段时间以来的资金去向，以便从中总结，合理规划自己未来的支出。</li>
+  <li>可以制定一定时期内的财务计划，如一个周期的预算，往储蓄账户里攒多少钱来买某个想要的物品。</li>
+  <li>……</li>
+</ul>
+
+<p>而我是在前一段时间在短期内开销过大让我意识到自己需要一个财务管理系统来让自己<strong>意识到自己的支出情况，妥善管理自己的财务</strong>。</p>
+
+<h2 id="为什么选择firefly-iii">为什么选择Firefly III</h2>
+
+<p><em>工欲善其事必先利其器</em>。市面上存在着各色各样的财务管理软件，选择哪一款作为我的财务管理系统的引擎呢？在调查了各类软件的基本情况之后，我列出了选择财务管理软件一些关键的影响因素：</p>
+
+<ul>
+  <li><strong>软件是否开源</strong></li>
+  <li><strong>软件是否能跨平台使用和同步</strong></li>
+  <li><strong>软件是否拥有一个好看的界面</strong></li>
+  <li><strong>软件是否拥有一些高阶的记账功能</strong></li>
+</ul>
+
+<p>下面我将详细解释以上几点：</p>
+
+<p>首先软件是否为开源软件在我这里被列为了最重要的因素，原因是市面上存在的一些记账工具大多需要收费，且软件开发者在开发软件的过程中，对于付费的方式时有变更，拿我用过的<a href="https://moze.app/">MOZE</a>为例，这款软件在3.0版本之前，在iOS上的收费方式为一次性买断，但在3.0版本之后变成了按月订阅的方式，之前买断的用户可以继续用之前的版本，但之前的版本不会再维护，但买断的用户如果使用3.0之后的版本则需要重新付费，这无疑对老用户来说是一种冒犯。而作为财务管理系统，一旦养成习惯，很可能会伴随我们终身，而各个软件之前数据未必能互通，且使用习惯不一样，一旦放弃之前的软件从新的软件开始消耗的成本太高，因此在这里稳定才是最关键的因素。小开发者开发的软件如MOZE，长期的稳定性不能保证，即使是大的开发商，如微软这样的公司，软件烂尾的现象也时有发生。而作为开源软件来说，首先完全免费是肯定的。另外，由于流行的开源软件拥有一个相对稳定的社区，即使原来的开发者完全放弃开发，也会有社区中其他人继续开发，完全烂尾的风险很小。所以我认为选择一个开源的财务管理软件是十分重要的。</p>
+
+<p>此外，软件还要能够跨平台使用，并且同步。因为作为一个记账软件十分重要的是便捷性，不仅要有桌面端的客户端来进行深度操作，还需要有移动端能够随时随地进行记账，各个客户端之前数据互通并且能够同步。桌面端最好能够Windows，Mac，Linux三平台通用，避免更换设备时带来困扰。</p>
+
+<p>作为一个颜控，没有一个好看的界面怎么行！其实这里的“好看”也不需要太好看，毕竟这类软件还是以实用为主，但是最起码的交互界面要符合现代审美，而不是停留在十几年前的设计。毕竟要长期使用，谁不想一打开软件看到好看的UI收获美美的心情呢。</p>
+
+<p>除去一些基本功能，高阶记账功能也是必不可少的，如拆分账单来实现分期付款；一些固定的支出和收入能够按周期自动记账，如工资，手机话费等；能自动生成一些图表来直观的反映一个阶段的资金收支情况等等。这些高阶功能能在很大程度上省去一些不必要的人工，来实现智能化的记账操作。</p>
+
+<p>综合上述条件，我最终选择的财务管理软件就是——<a href="https://github.com/firefly-iii/firefly-iii">Firefly III</a>这是一款在<a href="https://github.com">Github</a>上开源了的软件，并且拥有4.5K的Star，社区的大小还是比较可观的。这款软件是基于Linux开发的，并需要通过Web访问。需要注意的是，如果需要跨设备访问和同步就需要一台自己的Linux服务器，并且要通过Web访问服务器的方式来获取服务。这样的部署方式也是好坏参半，一方面通过Web访问的方式完全不用担心跨设备和同步的问题，只要你的设备能访问网页就行，另一方面也是在一定程度上限制了用户的使用，据我所知目前仅有Android的APP，iOS上暂无客户端。不过对于长时间使用电脑的我来说这并不是主要的缺点，即便需要外出也能通过手机访问网页的方式来完成一些操作。</p>
+
+<p><img src="/assets/68c79d4f8b074123b88bdac1be6f166e.png" alt="bea785823dba6858288e609e959a0996.png" /></p>
+
+<p>它提供了一个简洁清晰的用户界面，并且支持高阶的记账操作，作为财务管理系统中的核心，它提供了一种不完美但稳定且功能全面的解决方案。</p>
+
+<h2 id="如何部署firefly-iii">如何部署Firefly III</h2>
+
+<p>我的服务器为一个1核CPU，512M内存的小机器，系统为Debian 9，下面我将展示通过<a href="https://docker.com">Docker</a> + <a href="https://postgresql.org">Postgresql</a> + <a href="https://caddyserver.com/">Caddy</a>部署可通过SSL加密访问的Firefly III。在部署之前需要提前安装好Docker和Postgresql，然后运行以下命令创建卷：</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docker volume create firefly_iii_export
+docker volume create firefly_iii_upload
+docker volume create firefly_iii_db
+</code></pre></div></div>
+<p>然后启动数据库容器：</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docker run -d \
+--name=firefly_iii_db \
+-e POSTGRES_PASSWORD=CHANGEME_PASSWD \
+-e POSTGRES_USER=postgres \
+-v firefly_iii_db:/var/lib/postgresql/data \
+postgres:10
+</code></pre></div></div>
+<p>接着启动Firefly III容器:</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docker run -d \
+--name=firefly_iii_app \
+--link=firefly_iii_db \
+-e DB_HOST=firefly_iii_db \
+-e DB_DATABASE=postgres \
+-e DB_USERNAME=postgres \
+-e DB_PORT=5432 \
+-e DB_PASSWORD=CHANGEME_PASSWD \
+-e APP_KEY=CHANGEME_32_CHARS \
+-e APP_URL=CHANGEME_SERVER_DOMAIN \
+-e TRUSTED_PROXIES=** \
+-p 8888:80 \
+-v firefly_iii_export:/var/www/firefly-iii/storage/export \
+-v firefly_iii_upload:/var/www/firefly-iii/storage/upload \
+jc5x/firefly-iii:latest
+</code></pre></div></div>
+<p>其中的这两行命令为开启反向代理所需：</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code># ...
+APP_URL=https://firefly.example.com
+TRUSTED_PROXIES=**
+# ...
+</code></pre></div></div>
+<p>使用下面的命令来跟踪容器内的过程是否报错：</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docker container logs -f &lt;containerID&gt;
+</code></pre></div></div>
+<p>下面是caddy的配置：</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>SERVER_DOMAIN {
+ gzip
+ proxy / 127.0.0.1:8888 {
+  transparent
+ }
+}
+</code></pre></div></div>
+<p>虽然caddy可以自动申请证书，但是如果使用CDN加速需要另外配置证书，如<a href="https://cloudflare.com">Cloudflare</a>可以在面板的SSL一栏进行配置。</p>
+
+<p>经过以上配置就能通过Https在各种设备上来访问自己的域名使用Firefly III了。</p>
+
+  </div><a class="u-url" href="/life/2020/03/17/firefly-iii.html" hidden></a>
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Bink&#39;s Blog</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">Bink&#39;s Blog</li><li><a class="u-email" href="mailto:binkoo98@gmail.com">binkoo98@gmail.com</a></li></ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/bink98"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">bink98</span></a></li></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>无何有之乡——记录，分享我的心得</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
